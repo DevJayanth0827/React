@@ -6,6 +6,20 @@
     <title>React js</title>
 </head>
 <body>
-    <script type="module" src="App.js"></script>
+      <div id="root"></div>
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <script>
+    // Create a React element with the "h1" tag and content "Namaste React!"
+    const heading = React.createElement("h1", {}, "Namaste React!");
+
+    // Create a React root using ReactDOM.createRoot for attaching to the DOM
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+
+    // Render the React element to the "root" element in the DOM
+    root.render(heading);
+</script>
 </body>
 </html>
